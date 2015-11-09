@@ -1,4 +1,4 @@
-= This repo
+# rcodetools
 
 I did not write rcodetools, nor do I maintain it.
 The gem does not list an official repository,
@@ -9,18 +9,7 @@ so that I have a repository that I can reference back to.
 This is version 0.8.5.0,
 the changes I have made are only this change to the readme.
 
-If you like rcodetool's xmpfilter, I maintain
-SeeingIsBelieving[https://github.com/JoshCheek/seeing_is_believing#readme]
-a tool intended to succeed it.
-
-= Copyright info
-
- rcodetools  http://eigenclass.org/hiki.rb?rcodetools
- Copyright (c) 2005-2007 Mauricio Fernandez <mfp@acm.org> http://eigenclass.org
- Copyright (c) 2006-2008 rubikitch <rubikitch@ruby-lang.org> http://www.rubyist.net/~rubikitch/
-Use and distribution subject to the terms of the Ruby license.
-
-= Overview
+## Overview
 rcodetools is a collection of Ruby code manipulation tools.
 It includes xmpfilter and editor-independent Ruby development helper tools,
 as well as emacs and vim interfaces.
@@ -42,7 +31,7 @@ Actually they use xmpfilter's code heavily.
 But the relationship between xmpfilter (annotation) and completion/doc is not
 intuitive, so I (rubikitch) split it into separate executables.
 
-= Usage
+## Usage
 xmpfilter, rct-complete and rct-doc take its input from stdin and write to
 stdout. They can run in several modes; see
  xmpfilter -h
@@ -55,7 +44,7 @@ stdout. They can run in several modes; see
  rbtest -h
 README.emacs and README.vim describe how to use rcodetools from your editor.
 
-= Accurate Completion Internal and Caveat
+### Accurate Completion Internal and Caveat
 rct-complete and rct-doc use xmpfilter engine, ie they get runtime information by executing code.
 In Ruby (dynamic languages), type of any expressions except literals cannot be known without actually executing code.
 Moreover Ruby has open classes and singleton methods.
@@ -109,6 +98,12 @@ Enjoy TDC magic!
 
 See also README.TDC.
 
+## Copyright info
 
-= License
+ rcodetools  http://eigenclass.org/hiki.rb?rcodetools
+ Copyright (c) 2005-2007 Mauricio Fernandez <mfp@acm.org> http://eigenclass.org
+ Copyright (c) 2006-2008 rubikitch <rubikitch@ruby-lang.org> http://www.rubyist.net/~rubikitch/
+Use and distribution subject to the terms of the Ruby license.
+
+## License
 rcodetools is licensed under the same terms as Ruby.
